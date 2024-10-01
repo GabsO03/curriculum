@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"/>
+  <style>
+      .bg-primary { background-color: #b08c77; }
+      .text-amber-700 { color: #b08c77; }
+      .text-orange-400 { color: #8d6e63; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="w-full fixed top-0 z-50 bg-white bg-opacity-90 border-gray-200 dark:bg-amber-950 dark:bg-opacity-90">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <p class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white">Gabs</span>
+        </p>
+        <div class="flex md:order-2">
+          <a href="https://github.com/Gabs003" class="text-gray-500 dark:text-gray-400 dark:hover:bg-orange-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm p-2.5 me-1">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+            </svg>
+            
+            <span class="sr-only">github</span>
+          </a>
+
+
+          <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center self-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-orange-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-amber-700 lg:dark:bg-transparent md:dark:bg-transparent dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-orange-400 dark:hover:text-white md:dark:hover:bg-transparent">Inicio</a>
+            </li>
+            <li>
+              <a href="#sobremi" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-orange-400 dark:hover:text-white md:dark:hover:bg-transparent">Sobre mí</a>
+            </li>
+            <li>
+              <a href="#formacion" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-orange-400 dark:hover:text-white md:dark:hover:bg-transparent">Formación</a>
+            </li>
+            <li>
+              <a href="#habilidades" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-orange-400 dark:hover:text-white md:dark:hover:bg-transparent">Habilidades</a>
+            </li>
+            <li>
+              <a href="#masinfo" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-orange-400 dark:hover:text-white md:dark:hover:bg-transparent">Extras</a>
+            </li>
+            <li>
+              <a href="#contacto" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-orange-400 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section>
+    <div id="sobremi" class="text-center mt-20 mx-auto bg-white rounded-lg shadow-lg text-gray-800 p-10">
+      <div class="text-center">
+          <img src="WhatsApp Image 2024-04-12 at 20.09.26.jpg" alt="Foto de perfil" class="w-40 h-40 rounded-full mx-auto mb-4">
+          <h1 class="text-5xl font-bold text-orange-400">Gabriela Oria</h1>
+          <p class="text-2xl text-amber-700">Desarrolladora de Aplicaciones Web</p>
+      </div>
+
+      <div class="max-w-lg items-center text-center mt-8 mx-auto">
+          <h2 class="text-4xl font-semibold text-orange-400">Sobre mí</h2>
+          <p class="mt-2 text-lg">
+              Disfruto trabajando en equipo de manera proactiva y espontánea para resolver problemas.
+              Mi curiosidad me impulsa a colaborar activamente en proyectos donde pueda aplicar mis habilidades en programación.
+          </p>
+      </div>
+
+      <h2 id="formacion" class="mt-32 mb-3 text-left text-3xl font-semibold text-orange-400">Formación Académica</h2>
+      <div class="relative text-left border-l-4 border-orange-400 pl-6">
+        <div class="absolute w-4 h-4 rounded-full bg-orange-400 -left-2 top-0"></div>
+        <h2 class="text-2xl font-semibold text-amber-600">Ciclo formativo en Desarrollo de Aplicaciones Web</h2>
+        <p class="text-lg mt-2 text-gray-700 font-bold">
+            2023 - Presente
+        </p>
+        <span class="font-semibold">IES Fernando III</span>
+        <div class="mt-8">
+          <h2 class="text-2xl font-semibold text-orange-400">Herramientas</h2>
+          <div class="flex flex-wrap">
+            <ul class="flex flex-wrap list-disc list-inside mt-2 font-medium grid-cols-4">
+              <li class="m-4">HTML</li>
+              <li class="m-4">Java</li>
+              <li class="m-4">JavaScript</li>
+              <li class="m-4">PHP</li>
+            </ul>
+            <ul class="flex flex-wrap list-disc list-inside mt-2 font-medium grid-cols-4">
+              <li class="m-4">JSP</li>
+              <li class="m-4">CSS</li>
+              <li class="m-4">SQL</li>
+              <li class="m-4">XML</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+  
+      <div id="habilidades" class="m-8">
+        <h2 class="mt-40 text-3xl font-semibold text-orange-400 text-center">Habilidades</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+          <div class="bg-white shadow-md hover:bg-yellow-400 transition duration-300 p-6 rounded-lg text-center">
+              <h3 class="font-semibold text-lg">Trabajo en equipo</h3>
+              <p class="text-gray-600 mt-2">Colaboración eficiente en equipos diversos.</p>
+          </div>
+  
+          <div class="bg-white shadow-md hover:bg-yellow-400 transition duration-300 p-6 rounded-lg text-center">
+              <h3 class="font-semibold text-lg">Proactiva</h3>
+              <p class="text-gray-600 mt-2">Toma de iniciativa y enfoque proactivo.</p>
+          </div>
+  
+          <div class="bg-white shadow-md hover:bg-yellow-400 transition duration-300 p-6 rounded-lg text-center">
+              <h3 class="font-semibold text-lg">Resolución de problemas</h3>
+              <p class="text-gray-600 mt-2">Habilidad para resolver conflictos y desafíos.</p>
+          </div>
+  
+          <div class="bg-white shadow-md hover:bg-yellow-400 transition duration-300 p-6 rounded-lg text-center">
+              <h3 class="font-semibold text-lg">Hablar al público</h3>
+              <p class="text-gray-600 mt-2">Facilidad para hablar en público con confianza.</p>
+          </div>
+        </div>
+      </div>
+      <h2 id="masinfo" class="mb-3 mt-32 text-3xl font-semibold text-orange-400">Más información</h2>
+      <div class="flex lg:flex-row md:flex-col sm:flex-col flex-wrap justify-center">
+        <div class="max-w-lg justify-start flex lg:flex-row md:flex-col flex-wrap">
+          <ul>
+            <li class="flex justify-start text-xl m-4"><svg class="w-6 h-6 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+            <strong>Teléfono:</strong> <span>611 79 79 22</span></li>
+            <li class="flex justify-start text-xl m-4"><svg class="w-6 h-6 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg> <strong>Ciudad:</strong> <span>Martos, Jaén</span></li>
+            <li class="flex justify-start text-xl m-4"><svg class="w-6 h-6 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg> <strong>Idiomas:</strong> <span>Español (Nativo), Ingles intermedio</span></li>
+          </ul>
+        </div>
+        <div class="justify-start flex lg:flex-row md:flex-col flex-wrap">
+          <ul>
+            <li class="flex justify-start text-xl m-4"><svg class="w-6 h-6 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg> <strong>Edad:</strong> <span>21</span></li>
+            <li class="flex justify-start text-xl m-4"><svg class="w-6 h-6 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg> <strong>Email:</strong> <span>gabrielaoria66@gmail.com</span></li>
+            <li class="flex justify-start text-xl m-4"><svg class="w-6 h-6 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg> <strong>Disponibilidad:</strong> <span>Inmediata</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contacto" class="mt-8 mb-20">
+        <h2 class="mt-32 text-2xl font-semibold text-orange-400 text-center">CONTACTO</h2>
+        <p class="text-center mt-2 text-gray-600">Para más información o consultas, contáctame mediante los siguientes medios:</p>
+    
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mt-6">
+          <div class="flex flex-col items-center text-center">
+            <svg class="w-10 h-10 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+            </svg>
+            <h3 class="font-semibold text-lg mt-2">GitHub</h3>
+            <a href="https://github.com/Gabs003" class="text-amber-700 hover:underline" target="_blank">github.com/Gabs003</a>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <svg class="w-10 h-10 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+            </svg>
+            <h3 class="font-semibold text-lg mt-2">Teléfono</h3>
+            <p class="text-gray-600">611 79 79 22</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <svg class="w-10 h-10 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+            </svg>
+            <h3 class="font-semibold text-lg mt-2">Email</h3>
+            <p class="text-gray-600">gabrielaoria66@gmail.com</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <svg class="w-10 h-10 text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"/>
+            </svg>            
+            <h3 class="font-semibold text-lg mt-2">Ubicación</h3>
+            <p class="text-gray-600">Martos, Jaén</p>
+          </div>
+        </div>
+    </div>
+      
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>  
+</body>
+</html>
